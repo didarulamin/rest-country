@@ -4,7 +4,7 @@ export default function Country(props) {
   const { name, flag, region, capital, population } = props.country;
 
   const divSize = {
-    backgroundColor: "#7a7a52",
+    backgroundColor: "#C71585",
     color: "#FFFFFF",
   };
   const imgSize = {
@@ -13,7 +13,7 @@ export default function Country(props) {
   };
 
   return (
-    <div style={divSize} className="col-3  m-1 text-center">
+    <div style={divSize} className="col-3  m-1 text-center rounded-3">
       <h4 className="text-warning">This is: {name}</h4>
       <img style={imgSize} src={flag} alt="" />
       <p>
